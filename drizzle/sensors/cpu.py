@@ -21,7 +21,7 @@ class CPUSensor(Sensor):
 			total += int(c)
 		diff_idle = idle - self.prev_idle
 		diff_total = total - self.prev_total
-		usage = round(float(100 * (diff_total - diff_idle)) / diff_total, 2)
+		usage = round(float((diff_total - diff_idle)) / diff_total, 4)
 		self.prev_total = total
 		self.prev_idle = idle
 		return usage

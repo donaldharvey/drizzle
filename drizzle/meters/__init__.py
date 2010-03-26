@@ -7,8 +7,9 @@ class Meter(graphics.Sprite):
 	nicename = 'Meter'
 	defaults = {}
 
-	def __init__(self, settings, value=0.0):
+	def __init__(self, settings, sensor=None, value=0.0):
 		self.value = value
+		self.sensor = sensor
 		self.settings = universal_defaults.copy()
 		self.settings.update(self.defaults)
 		self.settings.update(settings)

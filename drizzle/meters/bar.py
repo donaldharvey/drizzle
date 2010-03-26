@@ -5,7 +5,7 @@ class BarMeter(Meter):
 	nicename = 'Bar Meter'
 	defaults = {
 		'foreground_colour': (0, 0, 0, 1),
-		'background_colour': (1, 0, 0, 0),
+		'background_colour': (0, 0, 0, 0.2),
 		'height': 2,
 		'width': 200,
 		'vertical': False,

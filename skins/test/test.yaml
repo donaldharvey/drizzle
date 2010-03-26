@@ -1,0 +1,25 @@
+metadata:
+    name: Test skin
+    author: donald
+    date: 2010-03-25
+    version: 0.1a
+    description: >
+        A test skin for Drizzle.
+    
+drizzle:
+    update-interval: 1000
+    
+mem-sensor:
+    sensor: RAMSensor
+    cpu: 1
+
+mem-meter:
+    meter: BarMeter
+    sensor: mem-sensor
+    vertical: true
+    x: 10
+    y: 21
+    height: 400
+    width: 3
+    
+    
